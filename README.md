@@ -10,7 +10,7 @@ Coming soon...
 
 Coming soon...
 
-### Building and running
+### Building on Windows
 
 To build for Windows you need to be explicit about which features is being used:
 
@@ -24,7 +24,17 @@ Running means you need similar syntax:
 cargo run --features sdl2_windows
 ```
 
-And for Mac OS the following will work
+To create a package that can be uploaded and published through Windows Store, use the following command in a PowerShell console.
+
+```
+.\Make-Appx.ps1
+```
+
+The resulting Snake.msix package should be enough to publish. The latest build is already available (however currently hidden from search) in [Windows Store](https://www.microsoft.com/store/apps/9NTJ3SRHHD3H)
+
+### Building on Mac OS
+
+For Mac OS the following will work
 
 ```
 cargo build --features sdl2_mac
