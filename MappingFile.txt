@@ -1,0 +1,6 @@
+[Files]
+".\assets\images\Square44x44Logo.png"           "images\Square44x44Logo.png"
+".\assets\images\Square150x150Logo.png"         "images\Square150x150Logo.png"
+".\assets\images\StoreLogo.png"                 "images\StoreLogo.png"
+".\target\release\snake.exe"                    "snake.exe"
+".\target\release\snake.pdb"                    "snake.pdb"

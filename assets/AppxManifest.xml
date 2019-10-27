@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities">
+  <Identity Name="CoderoxAB.SnakeGameinRust" Version="1.1.0.0" Publisher="CN=A15B31EC-F295-4C6E-952A-38151B9A88C3" ProcessorArchitecture="x64" />
+    <Properties>
+      <DisplayName>Snake Game in Rust</DisplayName>
+      <PublisherDisplayName>Coderox AB</PublisherDisplayName>
+      <Description>Snake Game in Rust for Windows Store</Description>
+      <Logo>images\StoreLogo.png</Logo>
+    </Properties>
+    <Resources>
+      <Resource Language="en" />
+    </Resources>
+      <Dependencies>
+        <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.18362.0" />
+      </Dependencies>
+      <Capabilities>
+        <rescap:Capability Name="runFullTrust"/>
+      </Capabilities>
+    <Applications>
+      <Application Id="snake" Executable="snake.exe" EntryPoint="Windows.FullTrustApplication">
+        <uap:VisualElements DisplayName="Snake Game in Rust" Description="Snake Game in Rust for Windows Store" Square150x150Logo="images\Square150x150Logo.png"
+                            Square44x44Logo="images\Square44x44Logo.png" BackgroundColor="#464646" />
+      </Application>
+     </Applications>
+  </Package>
