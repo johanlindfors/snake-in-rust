@@ -1,11 +1,11 @@
 use std::collections::VecDeque;
 use sdl2::pixels::Color;
-use sdl2::rect::{Rect};
-use sdl2::render::{Canvas};
-use sdl2::video::{Window};
+use sdl2::rect::Rect;
+use sdl2::render::Canvas;
+use sdl2::video::Window;
 
-use game_objects::position::{Position};
-use game_objects::constants::{SPRITE_SIZE, SCREEN_SIZE, INITIAL_TAIL};
+use position::Position;
+use constants::{SPRITE_SIZE, SCREEN_SIZE, INITIAL_TAIL};
 
 pub struct Snake {
     pub x: i32,

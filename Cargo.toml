@@ -1,5 +1,5 @@
 [package]
-name = "snake"
+name = "snake_in_rust"
 version = "0.1.0"
 authors = ["Johan Lindfors <johan.lindfors@coderox.se>"]
 build = "build.rs"

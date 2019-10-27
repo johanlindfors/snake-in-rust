@@ -1,8 +1,8 @@
 use sdl2::pixels::Color;
-use sdl2::rect::{Rect};
-use sdl2::render::{Canvas};
-use sdl2::video::{Window};
-use crate::game_objects::constants::{SPRITE_SIZE};
+use sdl2::rect::Rect;
+use sdl2::render::Canvas;
+use sdl2::video::Window;
+use constants::SPRITE_SIZE;
 
 pub struct Apple {
     pub x: i32,

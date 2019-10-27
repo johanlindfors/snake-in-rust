@@ -7,21 +7,21 @@ mod game_objects;
 
 pub use crate::game_objects::*; 
 
-mod snake {
+mod snake_in_rust {
     use std::time::Duration;
     use std::collections::VecDeque;
 
     use sdl2::event::Event;
     use sdl2::keyboard::Keycode;
     use sdl2::pixels::Color;
-    use sdl2::render::{Canvas};
-    use sdl2::video::{Window};
+    use sdl2::render::Canvas;
+    use sdl2::video::Window;
 
     use rand::{Rng};
 
-    use game_objects::apple::Apple;
-    use game_objects::snake::Snake;
-    use game_objects::constants::{SPRITE_SIZE, SCREEN_SIZE, INITIAL_TAIL, FRAMES_PER_SECOND};
+    use apple::Apple;
+    use snake::Snake;
+    use constants::{SPRITE_SIZE, SCREEN_SIZE, INITIAL_TAIL, FRAMES_PER_SECOND};
 
     pub struct SnakeGame {
         canvas: Canvas<Window>,
@@ -129,14 +129,15 @@ mod snake {
 }
 
 pub fn main() {
-    let mut snake_game = snake::SnakeGame::new();
+    let mut snake_game = snake_in_rust::SnakeGame::new();
     snake_game.run();    
 }
 
 #[cfg(test)] 
 mod test {
     use std::collections::{VecDeque};
-    use snake::{Snake,Position};
+    use snake::Snake;
+    use position::Position;
 
     #[test]
     fn test_collision_empty_trail() {
