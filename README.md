@@ -4,7 +4,12 @@ This is a small game of snake written in Rust, published as a game in Windows St
 
 ## Getting Started
 
-Coming soon...
+Build with:
+
+```
+cargo +nightly build -Z features=itarget
+```
+
 
 ### Prerequisites
 
