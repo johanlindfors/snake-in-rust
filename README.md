@@ -15,7 +15,7 @@ Coming soon...
 To build for Windows you need to be explicit about which features is being used:
 
 ```
-cargo build --features sdl2_windows
+cargo build --features sdl2_windows --release
 ```
 
 Running means you need similar syntax:
